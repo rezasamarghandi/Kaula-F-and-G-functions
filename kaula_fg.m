@@ -59,7 +59,7 @@ end
 
 beta=e/(1+sqrt(1-e^2));
 
-g=(-1)^abs(q-1)*(1+beta^2)^l*beta^abs(q)*symsum(symsum(nchoosek(2*pp-2*l,hp-rp)*((-1^rp)/factorial(rp))*((l-2*pp+qp)*e/(2*beta))^rp,rp,0,hp)*symsum(nchoosek(-2*pp,hq-rq)/factorial(rq)*((l-2*pp+qp)*e/(2*beta))^rq,rq,0,hq)*beta^(2*k),k,0,10);
+g=(-1)^abs(q)*(1+beta^2)^l*beta^abs(q)*symsum(symsum(nchoosek(2*pp-2*l,hp-rp)*(((-1)^rp)/factorial(rp))*((l-2*pp+qp)*e/(2*beta))^rp,rp,0,hp)*symsum(nchoosek(-2*pp,hq-rq)/factorial(rq)*((l-2*pp+qp)*e/(2*beta))^rq,rq,0,hq)*beta^(2*k),k,0,10);
 
 
 end
